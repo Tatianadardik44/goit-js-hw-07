@@ -5,7 +5,7 @@ const textWelcome = document.querySelector("#name-output");
 
 
 
-// inputEl.addEventListener(`input`, function () {
+// inputtEl.addEventListener(`input`, function () {
 //   const names = inputEl.value;
 //   if (names.trim() ===  ``) {
 //     textWelcome.textContent = `Anonymous`;
