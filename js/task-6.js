@@ -12,7 +12,11 @@ let height = 30;
 
 
 addBtr.addEventListener("click", createBoxes);
+
 function createBoxes() {
+  bigBox.innerHTML = "";
+  width = 30;
+     height = 30;
   const amount = fieldInput.value;
   if (amount <= 0 || amount > 100) {
     bigBox.innerHTML = "";
@@ -23,6 +27,7 @@ function createBoxes() {
   else {
     for (let i = 0; i < amount; i++)
     {
+      
        const cub = document.createElement("div");
         cub.style.width = `${width}px`;
         cub.style.height = `${height}px`;
@@ -31,11 +36,13 @@ function createBoxes() {
         width += 10;
         height += 10;
       fieldInput.value = "";
-      
-    };
-  };
+     
+    }
+  
+  } 
   
 };
+
  clinerBtr.addEventListener("click",destroyBoxes);
     function destroyBoxes() {
       bigBox.innerHTML = ""; 
