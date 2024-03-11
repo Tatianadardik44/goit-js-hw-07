@@ -19,6 +19,6 @@ function fillingForm(event) {
     event.target.reset();
 
 
-}   
+}; 
 
 
