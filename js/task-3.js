@@ -1,4 +1,4 @@
-const inpufEl = document.querySelector("#name-input");
+const inputEl = document.querySelector("#name-input");
 const textWelcome = document.querySelector("#name-output");
 
 
@@ -6,7 +6,7 @@ const textWelcome = document.querySelector("#name-output");
 
 
 // inpufEl.addEventListener(`input`, function () {
-//   const names = inpufEl.value;
+//   const names = inputEl.value;
 //   if (names.trim() ===  ``) {
 //     textWelcome.textContent = `Anonymous`;
 //   } else { textWelcome.textContent = names; }
@@ -15,7 +15,7 @@ const textWelcome = document.querySelector("#name-output");
 
 
 
-inpufEl.addEventListener(`input`, inputWelcome);
+inputEl.addEventListener(`input`, inputWelcome);
 function inputWelcome(event) {
   const name = event.target.value;
   const names = name.trim();
@@ -27,4 +27,3 @@ function inputWelcome(event) {
   
 }
 
-// Я вибачаюсь , но это взрыв мозгов !
