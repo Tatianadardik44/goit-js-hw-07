@@ -27,7 +27,7 @@ function createBoxes() {
         cub.style.width = `${width}px`;
         cub.style.height = `${height}px`;
         cub.style.backgroundColor = getRandomHexColor();
-        bigBox.prepend(cub);
+        bigBox.append(cub);
         width += 10;
         height += 10;
       fieldInput.value = "";
