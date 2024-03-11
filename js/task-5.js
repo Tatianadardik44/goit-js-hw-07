@@ -10,9 +10,9 @@ const bodyColor = document.querySelector(`body`);
 
 clikBtn.addEventListener("click", handleClick);
 function handleClick() {
- 
-  textColor.textContent = getRandomHexColor();
-  bodyColor.style.backgroundColor = getRandomHexColor();
+  const newColor = getRandomHexColor();
+  textColor.textContent = newColor ;
+  bodyColor.style.backgroundColor = newColor ;
   
 };
 
